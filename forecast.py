@@ -13,6 +13,8 @@ data = json.loads(response.text)
 # Extract the relevant information from the API response
 forecast_items = data['list']
 city = data['city']['name']
+forecast_items = data['list']
+city = data['city']['name']
 
 # Print the forecast for the next few days
 print(f'Weather forecast for {city}:')
