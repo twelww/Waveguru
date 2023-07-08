@@ -8,7 +8,7 @@ location = 'New York'
 # Make an API request to get the weather forecast
 url = f'http://api.openweathermap.org/data/2.5/forecast?q={location}&appid={api_key}'
 response = requests.get(url)
-data = json.loads(response.text)
+data = json.loads(response.text) //1st
 
 # Extract the relevant information from the API response
 forecast_items = data['list']
